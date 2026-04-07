@@ -96,7 +96,7 @@ export const services = [
     },
     {
         n: "05", title: "CMS & Content Systems",
-        body: "Headless CMS architecture that editors love to use. Sanity Studio, structured content workflows, and GROQ queries that fetch only what the page needs.",
+        body: "Headless CMS architecture that editors love to use. Sanity Studio, structured content workflows, and GROQ queries that fetch only what the page.tsx needs.",
         tags: ["Sanity", "Contentful", "GROQ", "Headless"],
     },
     {
