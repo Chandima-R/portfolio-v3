@@ -6,8 +6,8 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {Navbar} from "@/components/layout/navbar";
 import {Footer} from "@/components/layout/footer";
 import {CustomCursor} from "@/components/utils/custom-cursor";
-import {useLenis} from "@/app/hooks/use-lenis";
-import {projects} from "@/components/lib/data";
+import {useLenis} from "@/hooks/use-lenis";
+import {projects} from "@/lib/data";
 
 gsap.registerPlugin(ScrollTrigger);
 

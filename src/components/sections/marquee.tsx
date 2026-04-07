@@ -1,5 +1,5 @@
 "use client";
-import {skills} from "@/components/lib/data";
+import {skills} from "@/lib/data";
 
 const r1 = [...skills, ...skills];
 const r2 = [...skills.slice(7), ...skills, ...skills.slice(0,7)];

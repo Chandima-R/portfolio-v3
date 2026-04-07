@@ -2,7 +2,7 @@
 import {useEffect} from "react";
 import {CustomCursor} from "../utils/custom-cursor";
 import {gsap} from "gsap";
-import {useLenis} from "@/app/hooks/use-lenis";
+import {useLenis} from "@/hooks/use-lenis";
 import {Navbar} from "@/components/layout/navbar";
 import {Footer} from "@/components/layout/footer";
 

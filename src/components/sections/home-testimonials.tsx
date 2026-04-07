@@ -3,7 +3,7 @@ import {useEffect, useRef, useState} from "react";
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {AnimatePresence, motion} from "framer-motion";
-import {testimonials} from "@/components/lib/data";
+import {testimonials} from "@/lib/data";
 
 gsap.registerPlugin(ScrollTrigger);
 

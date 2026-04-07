@@ -4,7 +4,7 @@ import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {AnimatePresence, motion} from "framer-motion";
 import {PageLayout} from "@/components/layout/page-layout";
-import {pricing, services} from "@/components/lib/data";
+import {pricing, services} from "@/lib/data";
 
 gsap.registerPlugin(ScrollTrigger);
 

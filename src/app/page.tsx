@@ -12,7 +12,7 @@ import {HomeProcess} from "@/components/sections/home-process";
 import {HomeServices} from "@/components/sections/home-services";
 import {HomeTestimonials} from "@/components/sections/home-testimonials";
 import {HomeCTA} from "@/components/sections/home-cta";
-import {useLenis} from "@/app/hooks/use-lenis";
+import {useLenis} from "@/hooks/use-lenis";
 
 export default function Home() {
   const [ready, setReady] = useState(false);
