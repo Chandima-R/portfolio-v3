@@ -4,6 +4,7 @@ import {usePathname} from "next/navigation";
 import {gsap} from "gsap";
 
 const LINKS = [
+    { label: "Home",     href: "/" },
     { label: "Work",     href: "/work" },
     { label: "About",   href: "/about" },
     { label: "Services",href: "/services" },

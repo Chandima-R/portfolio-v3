@@ -60,7 +60,7 @@ export const CustomCursor = ()=> {
     };
 
     return (
-        <>
+        <div className={'hidden md:block'}>
             <div
                 ref={dot}
                 style={{
@@ -97,6 +97,6 @@ export const CustomCursor = ()=> {
           body, button { cursor: auto !important; }
         }
       `}</style>
-        </>
+        </div>
     );
 }
