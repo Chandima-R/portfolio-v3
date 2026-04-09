@@ -4,26 +4,15 @@
    TOKENS
 ══════════════════════════════════════════════ */
 @theme {
-  /* Backgrounds */
-  --c-bg:        #fafaf9;   /* softer than pure white */
-  --c-bg-alt:    #f5f5f4;   /* layered sections */
-
   /* Text */
-  --c-ink:       #0c0a09;   /* warmer than gray-900 */
-  --c-ink2:      #44403c;   /* secondary text */
-  --c-mid:       #78716c;   /* muted */
-
-  /* Structure */
-  --c-rule:      #e7e5e4;
-  --c-rule2:     #d6d3d1;
-
-  /* Accent (refined orange) */
-  --c-accent:        #f97316;  /* orange-500 (less harsh than 400) */
-  --c-accent-soft:   #fdba74;  /* orange-300 */
-  --c-accent-deep:   #c2410c;  /* orange-700 */
-
-  /* Highlight surfaces */
-  --c-accent-bg:     #fff7ed;  /* orange-50 */
+  --c-bg:        #f8f7f4;      /* warm off-white */
+  --c-bg-alt:    #f0ede8;      /* slightly deeper warm */
+  --c-ink:       #0f0f0d;      /* near-black warm */
+  --c-ink2:      #3a3a37;      /* secondary text */
+  --c-mid:       #7a7a76;      /* muted text */
+  --c-rule:      #dedbd4;      /* borders */
+  --c-rule2:     #c8c5bc;      /* stronger border */
+  --c-block:     #1a1a18;      /* dark inversion blocks */
 
   --f-serif:     "Fraunces", "Georgia", serif;
   --f-sans:      "Geist", "Inter", "Helvetica Neue", sans-serif;
