@@ -1,6 +1,6 @@
 "use client";
 import {useEffect} from "react";
-import {notFound} from "next/navigation";
+import {notFound, useParams} from "next/navigation";
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {Navbar} from "@/components/layout/navbar";
@@ -11,7 +11,8 @@ import {projects} from "@/lib/data";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function CaseStudy({ params }: { params: { slug: string } }) {
+export default function CaseStudy() {
+  const params = useParams()
   const p = projects.find(x => x.slug === params.slug);
   useLenis();
 

@@ -1,7 +1,7 @@
 "use client";
 
 import {useEffect, useRef, useState} from "react";
-import {notFound} from "next/navigation";
+import {notFound, useParams} from "next/navigation";
 import {gsap} from "gsap";
 import {Navbar} from "@/components/layout/navbar";
 import {Footer} from "@/components/layout/footer";
@@ -9,7 +9,8 @@ import {CustomCursor} from "@/components/utils/custom-cursor";
 import {useLenis} from "@/hooks/use-lenis";
 import {posts} from "@/lib/data";
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
+export default function BlogPost() {
+    const params = useParams()
     const post = posts.find(p => p.slug === params.slug);
     const [progress, setProgress] = useState(0);
     const artRef = useRef<HTMLDivElement>(null);
