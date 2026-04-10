@@ -188,7 +188,7 @@ img, video { display: block; max-width: 100%; }
   line-height: 1; letter-spacing: -.02em;
 }
 .t-label {
-  font-family: var(--f-mono); font-size: .6rem;
+  font-family: var(--f-mono); font-size: .8rem;
   letter-spacing: .2em; text-transform: uppercase; color: var(--c-mid);
 }
 .t-body {

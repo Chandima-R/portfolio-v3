@@ -69,7 +69,7 @@ export const Hero = ()=> {
                 right: "clamp(1.5rem,5vw,5rem)",
                 display: "flex", alignItems: "center", gap: ".6rem",
             }}>
-                <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#22c55e", display: "block", animation: "pulse-g 2s ease-in-out infinite" }} />
+                <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#22c55e", display: "block", animation: "pulse-g 2s ease-in-out infinite" }} />
                 <span className="t-label">Available for work</span>
             </div>
 
@@ -93,8 +93,7 @@ export const Hero = ()=> {
                 }}>
                     <div style={{ maxWidth: 400 }}>
                         <p className="t-body-lg">
-                            Chandima Rathnayake — building motion-rich, high-performance
-                            websites for ambitious brands. Based in Colombo, Sri Lanka.
+                            Chandima Rathnayake - crafting motion-rich, high-performance websites for ambitious brands. Based in Colombo, Sri Lanka.
                         </p>
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: "1rem", alignItems: "flex-end" }}>
