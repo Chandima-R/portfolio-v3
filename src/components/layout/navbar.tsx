@@ -37,7 +37,7 @@ export const Navbar = ({ isHome }: { isHome?: boolean })=> {
                         <rect x=".5" y=".5" width="25" height="25" stroke="var(--c-rule2)" strokeWidth=".75" />
                         <rect x="7" y="7" width="12" height="12" fill="var(--c-ink)" />
                     </svg>
-                    <span style={{ fontFamily: "var(--f-mono)", fontSize: ".58rem", letterSpacing: ".2em", textTransform: "uppercase", color: "var(--c-ink2)" }}>
+                    <span style={{ fontFamily: "var(--f-mono)", fontSize: ".82rem", letterSpacing: ".2em", textTransform: "uppercase", color: "var(--c-ink2)" }}>
             CR
           </span>
                 </a>

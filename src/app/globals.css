@@ -132,7 +132,7 @@ img, video { display: block; max-width: 100%; }
   border-bottom-color: var(--c-rule);
 }
 .nav-link {
-  font-family: var(--f-mono); font-size: .62rem;
+  font-family: var(--f-mono); font-size: .82rem;
   letter-spacing: .16em; text-transform: uppercase;
   color: var(--c-mid);
   position: relative; padding-bottom: 2px;
@@ -260,7 +260,7 @@ img, video { display: block; max-width: 100%; }
 ══════════════════════════════════════════════ */
 .btn {
   display: inline-flex; align-items: center; gap: .75rem;
-  font-family: var(--f-mono); font-size: .6rem;
+  font-family: var(--f-mono); font-size: .82rem;
   letter-spacing: .2em; text-transform: uppercase;
   padding: 1rem 2.4rem;
   transition: opacity .3s, background .3s, color .3s;
