@@ -68,6 +68,8 @@ export const projects = [
             { v: "+35%", l: "Client inquiry conversion lift" }
         ],
 
+        link: "https://laura-moon-photograpy-rebrand.vercel.app/",
+
         bg: "#f7f3ee",
         featured: true
     },
@@ -102,6 +104,8 @@ export const projects = [
             { v: "+35%", l: "User engagement time" },
             { v: "Improved", l: "Local trust & brand perception" }
         ],
+
+        link: "https://pristine-carpet-services-rebrand.vercel.app/",
 
         bg: "rgb(0 186 243 / 0.38)",
         featured: true
@@ -138,6 +142,8 @@ export const projects = [
             { v: "Premium", l: "Brand perception uplift" }
         ],
 
+        link: "https://villa-lee.vercel.app/",
+
         bg: "rgb(154 67 14 / 0.49)",
         featured: true
     },
@@ -172,6 +178,8 @@ export const projects = [
             { v: "+40%", l: "Engagement depth improvement" },
             { v: "Luxury", l: "Brand perception positioning" }
         ],
+
+        link: "https://villa-76-pi.vercel.app/",
 
         bg: "rgb(4 9 15 / 0.5)",
         featured: true

@@ -120,7 +120,7 @@ function WorkCard({ p, i }: { p: typeof projects[0]; i: number }) {
                     letterSpacing: "-.02em", marginBottom: ".5rem",
                 }}>{p.title}</h3>
                 <p style={{ fontFamily: "var(--f-mono)", fontSize: ".58rem", letterSpacing: ".16em", textTransform: "uppercase", color: "rgba(248,247,244,.45)" }}>
-                    View case study →
+                    View case study → 
                 </p>
             </div>
         </a>

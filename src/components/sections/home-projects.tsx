@@ -133,13 +133,18 @@ function ProjectEntry({ p, reverse }: { p: typeof projects[0]; reverse: boolean 
                 <p className="t-body fade-up" style={{ marginBottom: "2rem", maxWidth: 380, fontSize: "1rem" }}>
                     {p.excerpt}
                 </p>
-                <motion.div
-                    animate={{ x: hov ? 8 : 0 }}
-                    transition={{ duration: .4, ease: [.16,1,.3,1] }}
-                    className="fade-up"
-                >
-                    <span className="btn-text t-label">View case study →</span>
-                </motion.div>
+               <div className={'flex items-center gap-6'}>
+                   <motion.div
+                       animate={{ x: hov ? 8 : 0 }}
+                       transition={{ duration: .4, ease: [.16,1,.3,1] }}
+                       className="fade-up"
+                   >
+                       <span className="btn-text t-label">View case study</span>
+
+                   </motion.div>
+
+                   <a href={p?.link} target={"_blank"} className="btn-text t-label">Visit Site →</a>
+               </div>
             </div>
 
             <style>{`@media(max-width:768px){ .proj-entry{ grid-template-columns:1fr !important; } .proj-entry > div { order:0 !important; } }`}</style>
