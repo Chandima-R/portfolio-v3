@@ -152,7 +152,7 @@ img, video { display: block; max-width: 100%; }
 ══════════════════════════════════════════════ */
 .mob-menu {
   position: fixed; inset: 0; z-index: 490;
-  background: var(--c-ink);
+  background: var(--c-bg);
   display: flex; flex-direction: column;
   padding: 7rem clamp(1.5rem,5vw,5rem) 3rem;
   clip-path: inset(0 0 100% 0);

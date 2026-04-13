@@ -37,39 +37,19 @@ export const Navbar = ({isHome}: { isHome?: boolean }) => {
         <>
             <nav ref={navRef} className={`nav ${stuck ? "stuck" : ""}`}>
                 {/* Logo */}
-                {
-                    open ? (
-                        <Link href="/" style={{display: "flex", alignItems: "center", gap: ".8rem"}}
-                              className={' text-[#f8f7f4]'}>
-                            <Image src={'/images/logo/cr-logo-light.svg'} alt={'chandima rathnayake'} width={48}
-                                   height={48}
-                                   className={'w-auto h-12 object-cover'}/>
-                            <span style={{
-                                fontFamily: "var(--f-mono)",
-                                fontSize: "1.42rem",
-                                letterSpacing: ".2em",
-                                textTransform: "uppercase",
-                                color: "var(--c-bg)"
-                            }}>
+                <Link href="/" style={{display: "flex", alignItems: "center", gap: ".8rem"}}>
+                    <Image src={'/images/logo/cr-logo.svg'} alt={'chandima rathnayake'} width={48} height={48}
+                           className={'w-auto h-12 object-cover'}/>
+                    <span style={{
+                        fontFamily: "var(--f-mono)",
+                        fontSize: "1.42rem",
+                        letterSpacing: ".2em",
+                        textTransform: "uppercase",
+                        color: "var(--c-ink2)"
+                    }}>
             CR
           </span>
-                        </Link>
-                    ) : (
-                        <Link href="/" style={{display: "flex", alignItems: "center", gap: ".8rem"}}>
-                            <Image src={'/images/logo/cr-logo.svg'} alt={'chandima rathnayake'} width={48} height={48}
-                                   className={'w-auto h-12 object-cover'}/>
-                            <span style={{
-                                fontFamily: "var(--f-mono)",
-                                fontSize: "1.42rem",
-                                letterSpacing: ".2em",
-                                textTransform: "uppercase",
-                                color: "var(--c-ink2)"
-                            }}>
-            CR
-          </span>
-                        </Link>
-                    )
-                }
+                </Link>
 
                 {/* Desktop links */}
                 <div style={{display: "flex", alignItems: "center", gap: "2.5rem"}} className="hide-mob">
@@ -95,7 +75,6 @@ export const Navbar = ({isHome}: { isHome?: boolean }) => {
                                   transform: open ? (i === 0 ? "rotate(45deg) translate(4px,4px)" : i === 2 ? "rotate(-45deg) translate(4px,-4px)" : "none") : "none",
                                   opacity: open && i === 1 ? 0 : 1,
                                   transition: "all .4s cubic-bezier(.16,1,.3,1)",
-                                  backgroundColor: open ? "var(--c-bg)" : "var(--c-ink)",
                               }}/>
                     ))}
                 </button>
@@ -109,7 +88,7 @@ export const Navbar = ({isHome}: { isHome?: boolean }) => {
                                 style={{
                                     fontFamily: "var(--f-serif)", fontStyle: "italic", fontWeight: 300,
                                     fontSize: "clamp(2.2rem,8vw,4rem)", letterSpacing: "-.03em",
-                                    color: pathname === l.href ? "rgba(248,247,244,.4)" : "var(--c-bg)",
+                                    color: pathname === l.href ? "var(--c-mid)" : "var(--c-ink)",
                                     textAlign: "left", lineHeight: 1.1,
                                     transition: "color .3s",
                                 }}>
