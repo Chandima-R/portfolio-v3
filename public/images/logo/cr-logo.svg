@@ -1,0 +1,38 @@
+<svg width="140" height="140" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Core origin point (identity anchor) -->
+  <circle cx="60" cy="22" r="3.5" fill="currentColor"/>
+
+  <!-- Left motion path -->
+  <path
+    d="M60 22
+       C60 42, 38 58, 28 78
+       C24 86, 26 92, 32 96"
+    stroke="currentColor"
+    stroke-width="2.8"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Right motion path -->
+  <path
+    d="M60 22
+       C60 42, 82 58, 92 78
+       C96 86, 94 92, 88 96"
+    stroke="currentColor"
+    stroke-width="2.8"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Subtle equilibrium base -->
+  <path
+    d="M40 98
+       C50 104, 70 104, 80 98"
+    stroke="currentColor"
+    stroke-width="2.8"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+</svg>
