@@ -37,19 +37,39 @@ export const Navbar = ({isHome}: { isHome?: boolean }) => {
         <>
             <nav ref={navRef} className={`nav ${stuck ? "stuck" : ""}`}>
                 {/* Logo */}
-                <Link href="/" style={{display: "flex", alignItems: "center", gap: ".8rem"}}>
-                    <Image src={'/images/logo/cr-logo.svg'} alt={'chandima rathnayake'} width={48} height={48}
-                           className={'w-auto h-12 object-cover'}/>
-                    <span style={{
-                        fontFamily: "var(--f-mono)",
-                        fontSize: ".82rem",
-                        letterSpacing: ".2em",
-                        textTransform: "uppercase",
-                        color: "var(--c-ink2)"
-                    }}>
+                {
+                    open ? (
+                        <Link href="/" style={{display: "flex", alignItems: "center", gap: ".8rem"}}
+                              className={' text-[#f8f7f4]'}>
+                            <Image src={'/images/logo/cr-logo-light.svg'} alt={'chandima rathnayake'} width={48}
+                                   height={48}
+                                   className={'w-auto h-12 object-cover'}/>
+                            <span style={{
+                                fontFamily: "var(--f-mono)",
+                                fontSize: "1.42rem",
+                                letterSpacing: ".2em",
+                                textTransform: "uppercase",
+                                color: "var(--c-bg)"
+                            }}>
             CR
           </span>
-                </Link>
+                        </Link>
+                    ) : (
+                        <Link href="/" style={{display: "flex", alignItems: "center", gap: ".8rem"}}>
+                            <Image src={'/images/logo/cr-logo.svg'} alt={'chandima rathnayake'} width={48} height={48}
+                                   className={'w-auto h-12 object-cover'}/>
+                            <span style={{
+                                fontFamily: "var(--f-mono)",
+                                fontSize: "1.42rem",
+                                letterSpacing: ".2em",
+                                textTransform: "uppercase",
+                                color: "var(--c-ink2)"
+                            }}>
+            CR
+          </span>
+                        </Link>
+                    )
+                }
 
                 {/* Desktop links */}
                 <div style={{display: "flex", alignItems: "center", gap: "2.5rem"}} className="hide-mob">
@@ -68,13 +88,15 @@ export const Navbar = ({isHome}: { isHome?: boolean }) => {
                 <button onClick={() => setOpen(v => !v)} aria-label="Menu" className="show-mob"
                         style={{display: "flex", flexDirection: "column", gap: "5px"}}>
                     {[0, 1, 2].map(i => (
-                        <span key={i} style={{
-                            display: "block", height: "1px", background: "var(--c-ink)",
-                            width: i === 1 ? (open ? 24 : 16) : 24,
-                            transform: open ? (i === 0 ? "rotate(45deg) translate(4px,4px)" : i === 2 ? "rotate(-45deg) translate(4px,-4px)" : "none") : "none",
-                            opacity: open && i === 1 ? 0 : 1,
-                            transition: "all .4s cubic-bezier(.16,1,.3,1)",
-                        }}/>
+                        <span key={i}
+                              style={{
+                                  display: "block", height: "1px", background: "var(--c-ink)",
+                                  width: i === 1 ? (open ? 24 : 16) : 24,
+                                  transform: open ? (i === 0 ? "rotate(45deg) translate(4px,4px)" : i === 2 ? "rotate(-45deg) translate(4px,-4px)" : "none") : "none",
+                                  opacity: open && i === 1 ? 0 : 1,
+                                  transition: "all .4s cubic-bezier(.16,1,.3,1)",
+                                  backgroundColor: open ? "var(--c-bg)" : "var(--c-ink)",
+                              }}/>
                     ))}
                 </button>
             </nav>
@@ -96,7 +118,7 @@ export const Navbar = ({isHome}: { isHome?: boolean }) => {
                     ))}
                 </div>
                 <div style={{marginTop: "auto", paddingTop: "3rem", borderTop: "1px solid rgba(255,255,255,.08)"}}>
-                    <p className="t-label" style={{color: "rgba(248,247,244,.3)"}}>hello@chandimarathnayake.online</p>
+                    <p className="t-label" style={{color: "rgba(248,247,244,.3)"}}>chandimar.online@gmail.com</p>
                 </div>
             </div>
         </>
