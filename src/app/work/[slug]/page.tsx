@@ -61,6 +61,16 @@ export default function CaseStudy() {
 
   const next = projects[(projects.indexOf(p) + 1) % projects.length];
 
+  const meta = [
+    { label: "Stack", val: p.tags.join(" · ") },
+    { label: "Year", val: p.year },
+    { label: "Category", val: p.category },
+    { label: "Live", val: "Visit site", link: p.link },
+  ];
+
+  const groupOne = [meta[0], meta[2]];
+  const groupTwo = [meta[3]];
+
   return (
     <>
       <CustomCursor />
@@ -119,20 +129,82 @@ export default function CaseStudy() {
             </div>
 
             {/* meta strip */}
-            <div style={{
-              display: "flex", gap: "3rem", flexWrap: "wrap",
-              borderTop: "1px solid rgba(15,15,13,.1)", paddingTop: "2rem",
-            }}>
-              {[
-                { label: "Stack", val: p.tags.join(" · ") },
-                { label: "Year", val: p.year },
-                { label: "Category", val: p.category },
-              ].map(m => (
-                <div key={m.label} className="cs-meta-item">
-                  <p className="t-label" style={{ opacity: .4, marginBottom: ".35rem" }}>{m.label}</p>
-                  <p style={{ fontFamily: "var(--f-sans)", fontSize: ".9rem", color: "var(--c-ink2)", fontWeight: 300 }}>{m.val}</p>
-                </div>
-              ))}
+            <div
+                style={{
+                  display: "flex",
+                  gap: "3rem",
+                  flexWrap: "wrap",
+                  borderTop: "1px solid rgba(15,15,13,.1)",
+                  paddingTop: "2rem",
+                }}
+            >
+              {/* Group 1: Stack + Category */}
+              <div style={{ display: "flex", gap: "3rem", flexWrap: "wrap" }}>
+                {[
+                  { label: "Stack", val: p.tags.join(" · ") },
+                  { label: "Category", val: p.category },
+                ].map((m) => (
+                    <div key={m.label} className="cs-meta-item">
+                      <p
+                          className="t-label"
+                          style={{ opacity: 0.4, marginBottom: ".35rem" }}
+                      >
+                        {m.label}
+                      </p>
+                      <p
+                          style={{
+                            fontFamily: "var(--f-sans)",
+                            fontSize: ".9rem",
+                            color: "var(--c-ink2)",
+                            fontWeight: 300,
+                          }}
+                      >
+                        {m.val}
+                      </p>
+                    </div>
+                ))}
+              </div>
+
+              {/* Group 2: Year */}
+              <div className="cs-meta-item">
+                <p className="t-label" style={{ opacity: 0.4, marginBottom: ".35rem" }}>
+                  Year
+                </p>
+                <p
+                    style={{
+                      fontFamily: "var(--f-sans)",
+                      fontSize: ".9rem",
+                      color: "var(--c-ink2)",
+                      fontWeight: 300,
+                    }}
+                >
+                  {p.year}
+                </p>
+              </div>
+
+              {/* Group 3: Live CTA */}
+              <div className="cs-meta-item">
+                <p className="t-label" style={{ opacity: 0.4, marginBottom: ".35rem" }}>
+                  Live
+                </p>
+
+                <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{
+                      fontFamily: "var(--f-sans)",
+                      fontSize: ".9rem",
+                      color: "var(--c-ink2)",
+                      fontWeight: 300,
+                      textDecoration: "none",
+                      borderBottom: "1px solid rgba(15,15,13,.3)",
+                      paddingBottom: "2px",
+                    }}
+                >
+                  Visit site →
+                </a>
+              </div>
             </div>
           </div>
         </div>

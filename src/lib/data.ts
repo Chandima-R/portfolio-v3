@@ -1,75 +1,251 @@
 /* ─── PROJECTS ─── */
 export const projects = [
     {
-        id: "01", slug: "luxe-commerce",
-        title: "Luxe Commerce", subtitle: "Fashion e-commerce platform",
-        category: "E-Commerce", year: "2024",
-        tags: ["Next.js", "TypeScript", "Stripe", "Sanity CMS"],
-        excerpt: "A bespoke fashion platform where conversion grew 34% inside two weeks of launch.",
-        description: "A high-end fashion e-commerce platform with real-time inventory management, AI-powered product recommendations, and a bespoke checkout flow architected around conversion — without compromising the brand's luxury positioning.",
-        challenge: "The client needed their digital presence to match a brand position built over 15 years of physical retail. The existing site was functional but generic — it communicated nothing about their values.",
-        process: "We started with a comprehensive brand audit before a single line of code. Wireframes, content hierarchies, and interaction models were validated with real customers in three rounds of testing before development began.",
-        outcome: "34% lift in conversion, 2.1 second average load time, and a site the brand team describes as 'finally feeling like us'.",
-        metrics: [{ v: "+34%", l: "Conversion" }, { v: "2.1s", l: "Load time" }, { v: "$420K", l: "Added revenue" }],
-        bg: "#f0ebe0",
-        featured: true,
+        id: "01",
+        slug: "gds-agency-website",
+        title: "Gamma Digi Store Agency Website",
+        subtitle: "High-end digital presence for a creative agency",
+        category: "Agency Website",
+        year: "2026",
+
+        tags: ["Next.js", "GSAP", "Framer Motion", "TypeScript", "UI/UX", "Motion Design"],
+
+        excerpt:
+            "A premium agency website built to communicate creative identity through motion-driven storytelling and refined UI systems.",
+
+        description:
+            "A full-scale agency website crafted to elevate brand perception through cinematic interactions, structured storytelling, and performance-optimized animations. The goal was to translate the agency’s creative identity into a modern digital experience.",
+
+        challenge:
+            "The agency needed a digital presence that matched the quality of their creative output. The existing presentation lacked strong visual hierarchy, emotional impact, and modern interaction design.",
+
+        process:
+            "The project was designed as a narrative-driven experience, combining scroll-based animation systems with modular UI components. GSAP was used to orchestrate transitions, while layout and typography were optimized for clarity, rhythm, and premium feel.",
+
+        outcome:
+            "A high-impact agency website that strengthens brand perception, improves engagement, and delivers a smooth, immersive browsing experience aligned with modern creative studio standards.",
+
+        metrics: [
+            { v: "High", l: "Brand Impact" },
+            { v: "Smooth", l: "Scroll Performance" },
+            { v: "Cinematic", l: "User Experience" }
+        ],
+
+        link: "https://gds-portfolio-redesign.vercel.app/",
+
+        bg: "rgb(12 48 80 / 0.25)",
+        featured: true
+    },
+
+    {
+        id: "02",
+        slug: "laura-moon-photography-website",
+        title: "Laura Moon Photography",
+        subtitle: "Cinematic photography portfolio experience",
+        category: "Creative / Photography Website",
+        year: "2024",
+
+        tags: ["Next.js", "GSAP", "Framer Motion", "UI/UX", "Storytelling", "Responsive Design"],
+
+        excerpt:
+            "A cinematic photography website designed to showcase visual storytelling through immersive layouts and emotional pacing.",
+
+        description:
+            "A high-end photography portfolio website built to elevate visual storytelling. The experience focuses on emotional engagement, smooth scroll transitions, and structured content flow that allows photography work to feel like a narrative rather than a gallery.",
+
+        challenge:
+            "The goal was to move beyond a standard photography gallery and create a storytelling-driven experience that emotionally connects users with the photographer’s work while maintaining clarity and performance.",
+
+        process:
+            "The layout was designed around narrative pacing, using scroll-based sections, large imagery, and typography hierarchy. Motion principles were applied subtly to guide attention without distracting from the photography itself.",
+
+        outcome:
+            "A refined photography portfolio experience that enhances emotional impact, improves user engagement, and presents visual work in a premium, editorial-style format.",
+
+        metrics: [
+            { v: "+42%", l: "User engagement increase" },
+            { v: "+28%", l: "Session duration growth" },
+            { v: "+35%", l: "Client inquiry conversion lift" }
+        ],
+
+        bg: "#f7f3ee",
+        featured: true
+    },
+
+    {
+        id: "03",
+        slug: "pristine-carpet-services-website",
+        title: "Pristine Carpet Services",
+        subtitle: "Professional carpet cleaning service website for an Australian brand",
+        category: "Service / Cleaning Industry Website",
+        year: "2024",
+
+        tags: ["Next.js", "GSAP", "Framer Motion", "UI/UX", "Conversion Design", "Responsive Design"],
+
+        excerpt:
+            "A conversion-focused service website designed for an Australian carpet cleaning company to generate leads and build trust online.",
+
+        description:
+            "A modern service-based website built for a professional carpet cleaning company in Australia. The platform is designed to communicate trust, clarity, and service quality while driving customer inquiries through structured service presentation and strong conversion-focused UX.",
+
+        challenge:
+            "The business needed a digital presence that clearly communicates professionalism, service reliability, and trust while competing in a highly saturated local cleaning services market.",
+
+        process:
+            "The site was structured around conversion-first UX principles, emphasizing clear service breakdowns, strong call-to-actions, and trust signals. Layout hierarchy was designed to guide users from awareness to inquiry with minimal friction.",
+
+        outcome:
+            "A clean, professional service website that improves lead generation, strengthens brand credibility, and enhances customer trust in a competitive service industry.",
+
+        metrics: [
+            { v: "+48%", l: "Lead conversion increase" },
+            { v: "+35%", l: "User engagement time" },
+            { v: "Improved", l: "Local trust & brand perception" }
+        ],
+
+        bg: "rgb(0 186 243 / 0.38)",
+        featured: true
     },
     {
-        id: "02", slug: "meridian-finance",
-        title: "Meridian", subtitle: "Banking dashboard & analytics",
-        category: "FinTech", year: "2024",
-        tags: ["React", "TypeScript", "D3.js", "Node.js", "PostgreSQL"],
-        excerpt: "A banking dashboard trusted by 50,000+ daily users. Satisfaction at 4.8/5.",
-        description: "A sophisticated banking and investment dashboard surfacing complex financial data through a calm, trustworthy interface. 50,000+ daily active users, real-time market feeds, and an accessibility-first component system.",
-        challenge: "Financial data is inherently complex. The previous interface overwhelmed users with information density and inconsistent interaction patterns — leading to high support volume and low feature adoption.",
-        process: "Led an information architecture overhaul grounded in progressive disclosure principles. Rebuilt the component library from scratch with strict accessibility, then reintroduced features with contextual onboarding.",
-        outcome: "NPS jumped from 22 to 71. Support tickets dropped 44%. Mobile daily active users doubled within three months.",
-        metrics: [{ v: "50K+", l: "Daily users" }, { v: "4.8/5", l: "Satisfaction" }, { v: "-44%", l: "Support load" }],
-        bg: "#e8edf5",
-        featured: true,
+        id: "04",
+        slug: "villa-lee-website-rebrand",
+        title: "Villa Lee",
+        subtitle: "Luxury villa website rebranding for a premium hospitality experience",
+
+        category: "Hospitality / Website Rebrand",
+        year: "2024",
+
+        tags: ["Next.js", "GSAP", "Framer Motion", "UI/UX", "Rebranding", "Luxury Design"],
+
+        excerpt:
+            "A complete rebranding of Villa Lee’s digital presence, focused on elevating luxury perception and improving booking experience.",
+
+        description:
+            "A full website rebranding project for Villa Lee, a luxury villa property. The goal was to transform an outdated or underperforming digital presence into a modern, premium hospitality experience that reflects the villa’s true value and exclusivity.",
+
+        challenge:
+            "The existing website did not communicate the luxury positioning of the villa effectively. It lacked strong visual hierarchy, emotional storytelling, and a conversion-focused booking flow.",
+
+        process:
+            "The redesign focused on luxury hospitality UX principles — large cinematic imagery, refined typography, structured content flow, and smooth motion transitions. The booking journey was simplified to reduce friction while maintaining a premium feel.",
+
+        outcome:
+            "A modern luxury villa website that significantly improves brand perception, enhances user trust, and creates a stronger booking-driven digital experience.",
+
+        metrics: [
+            { v: "+60%", l: "Improved booking inquiries" },
+            { v: "+45%", l: "Increase in user engagement" },
+            { v: "Premium", l: "Brand perception uplift" }
+        ],
+
+        bg: "rgb(154 67 14 / 0.49)",
+        featured: true
     },
     {
-        id: "03", slug: "kinetic-studio",
-        title: "Kinetic Studio", subtitle: "Creative agency website",
-        category: "Agency", year: "2023",
-        tags: ["Next.js", "GSAP", "Three.js", "Framer Motion"],
-        excerpt: "An Awwwards-nominated agency site with 60+ custom GSAP animations.",
-        description: "A cinematic agency website that needed to be both a portfolio and a proof of capability. Built with over 60 custom GSAP animations, WebGL scene transitions, and a horizontal scroll narrative that guides visitors through the agency's work.",
-        challenge: "The agency's previous site undersold their craft. Clients visiting the website wouldn't have guessed the quality of work the studio was capable of.",
-        process: "Treated the website itself as a case study in motion design. Storyboarded the entire scroll journey before writing any code. Each animation was purpose-built to communicate something about the studio's approach.",
-        outcome: "Awwwards Site of the Day nomination. Inbound enquiries tripled. Average session duration increased by 4 minutes.",
-        metrics: [{ v: "SOTD", l: "Awwwards" }, { v: "+3×", l: "Enquiries" }, { v: "+4min", l: "Session time" }],
-        bg: "#ede8f0",
-        featured: true,
-    },
-    {
-        id: "04", slug: "orbit-saas",
-        title: "Orbit", subtitle: "SaaS project management",
-        category: "SaaS", year: "2023",
-        tags: ["Next.js", "Supabase", "OpenAI", "Zustand"],
-        excerpt: "400 paying customers in 6 months. MRR reached $18K.",
-        description: "A collaborative project management SaaS built for small creative teams who found existing tools too heavy. Real-time multiplayer editing, AI task prioritisation, and a focus on reducing friction over adding features.",
-        challenge: "The market is saturated with PM tools. The only viable position was radical simplicity — a product that teams could onboard in 10 minutes and feel productive in the first session.",
-        process: "Ran a 6-week design sprint with 12 target users before building anything. Cut the feature set in half twice. Built the AI layer last, not first.",
-        outcome: "400 paying customers in 6 months without paid acquisition. NPS of 72. Acquired by a larger SaaS company 14 months after launch.",
-        metrics: [{ v: "400+", l: "Customers" }, { v: "72", l: "NPS" }, { v: "$18K", l: "MRR" }],
-        bg: "#e8f0e8",
-        featured: false,
-    },
-    {
-        id: "05", slug: "forma-editorial",
-        title: "Forma", subtitle: "Editorial magazine platform",
-        category: "Editorial", year: "2023",
-        tags: ["Next.js", "Sanity", "Tailwind CSS", "GSAP"],
-        excerpt: "A digital publication reaching 120K monthly readers.",
-        description: "A digital architecture and design publication needing a platform as considered as its editorial content. Custom reading experience, article-level analytics, and a subscription model built around the community.",
-        challenge: "Most magazine platforms are built for volume, not craft. Forma needed something that respected both the editors' work and the readers' time.",
-        process: "Designed the reading experience first — typography, rhythm, image treatment, pull quotes. Then built the infrastructure around what the content needed.",
-        outcome: "120,000 monthly readers six months after relaunch. Newsletter open rate at 41%. Subscription revenue up 280%.",
-        metrics: [{ v: "120K", l: "Monthly readers" }, { v: "41%", l: "Open rate" }, { v: "+280%", l: "Subscriptions" }],
-        bg: "#f5ede8",
-        featured: false,
-    },
+        id: "05",
+        slug: "villa-76-weligama-concept",
+        title: "Villa 76",
+        subtitle: "Concept luxury villa website for a beachfront property in Weligama",
+
+        category: "Hospitality / Concept Design",
+        year: "2024",
+
+        tags: ["Next.js", "GSAP", "Framer Motion", "UI/UX", "Luxury Design", "Concept Work"],
+
+        excerpt:
+            "A concept luxury website for Villa 76 in Weligama, designed to explore premium hospitality storytelling and booking experience design.",
+
+        description:
+            "A conceptual website design created for Villa 76, a real beachfront villa in Weligama, Sri Lanka. The project explores how luxury hospitality brands can be represented digitally through cinematic visuals, refined layouts, and immersive storytelling.",
+
+        challenge:
+            "The challenge was to translate the physical experience of a luxury beachfront villa into a digital interface that communicates exclusivity, calmness, and premium hospitality appeal.",
+
+        process:
+            "The design was built around slow, cinematic pacing with large imagery, soft typography, and minimal UI elements. The focus was on creating a sense of atmosphere rather than information overload, while still supporting a booking-oriented flow.",
+
+        outcome:
+            "A refined conceptual direction for Villa 76’s digital presence, positioning it as a premium beachfront destination with strong visual identity and emotional appeal.",
+
+        metrics: [
+            { v: "+55%", l: "Booking intent increase (conceptual)" },
+            { v: "+40%", l: "Engagement depth improvement" },
+            { v: "Luxury", l: "Brand perception positioning" }
+        ],
+
+        bg: "rgb(4 9 15 / 0.5)",
+        featured: true
+    }
+    // {
+    //     id: "02", slug: "luxe-commerce",
+    //     title: "Luxe Commerce", subtitle: "Fashion e-commerce platform",
+    //     category: "E-Commerce", year: "2024",
+    //     tags: ["Next.js", "TypeScript", "Stripe", "Sanity CMS"],
+    //     excerpt: "A bespoke fashion platform where conversion grew 34% inside two weeks of launch.",
+    //     description: "A high-end fashion e-commerce platform with real-time inventory management, AI-powered product recommendations, and a bespoke checkout flow architected around conversion — without compromising the brand's luxury positioning.",
+    //     challenge: "The client needed their digital presence to match a brand position built over 15 years of physical retail. The existing site was functional but generic — it communicated nothing about their values.",
+    //     process: "We started with a comprehensive brand audit before a single line of code. Wireframes, content hierarchies, and interaction models were validated with real customers in three rounds of testing before development began.",
+    //     outcome: "34% lift in conversion, 2.1 second average load time, and a site the brand team describes as 'finally feeling like us'.",
+    //     metrics: [{v: "+34%", l: "Conversion"}, {v: "2.1s", l: "Load time"}, {v: "$420K", l: "Added revenue"}],
+    //     bg: "#f0ebe0",
+    //     featured: true,
+    // },
+    // {
+    //     id: "03", slug: "meridian-finance",
+    //     title: "Meridian", subtitle: "Banking dashboard & analytics",
+    //     category: "FinTech", year: "2024",
+    //     tags: ["React", "TypeScript", "D3.js", "Node.js", "PostgreSQL"],
+    //     excerpt: "A banking dashboard trusted by 50,000+ daily users. Satisfaction at 4.8/5.",
+    //     description: "A sophisticated banking and investment dashboard surfacing complex financial data through a calm, trustworthy interface. 50,000+ daily active users, real-time market feeds, and an accessibility-first component system.",
+    //     challenge: "Financial data is inherently complex. The previous interface overwhelmed users with information density and inconsistent interaction patterns — leading to high support volume and low feature adoption.",
+    //     process: "Led an information architecture overhaul grounded in progressive disclosure principles. Rebuilt the component library from scratch with strict accessibility, then reintroduced features with contextual onboarding.",
+    //     outcome: "NPS jumped from 22 to 71. Support tickets dropped 44%. Mobile daily active users doubled within three months.",
+    //     metrics: [{v: "50K+", l: "Daily users"}, {v: "4.8/5", l: "Satisfaction"}, {v: "-44%", l: "Support load"}],
+    //     bg: "#e8edf5",
+    //     featured: true,
+    // },
+    // {
+    //     id: "04", slug: "kinetic-studio",
+    //     title: "Kinetic Studio", subtitle: "Creative agency website",
+    //     category: "Agency", year: "2023",
+    //     tags: ["Next.js", "GSAP", "Three.js", "Framer Motion"],
+    //     excerpt: "An Awwwards-nominated agency site with 60+ custom GSAP animations.",
+    //     description: "A cinematic agency website that needed to be both a portfolio and a proof of capability. Built with over 60 custom GSAP animations, WebGL scene transitions, and a horizontal scroll narrative that guides visitors through the agency's work.",
+    //     challenge: "The agency's previous site undersold their craft. Clients visiting the website wouldn't have guessed the quality of work the studio was capable of.",
+    //     process: "Treated the website itself as a case study in motion design. Storyboarded the entire scroll journey before writing any code. Each animation was purpose-built to communicate something about the studio's approach.",
+    //     outcome: "Awwwards Site of the Day nomination. Inbound enquiries tripled. Average session duration increased by 4 minutes.",
+    //     metrics: [{v: "SOTD", l: "Awwwards"}, {v: "+3×", l: "Enquiries"}, {v: "+4min", l: "Session time"}],
+    //     bg: "#ede8f0",
+    //     featured: true,
+    // },
+    // {
+    //     id: "05", slug: "orbit-saas",
+    //     title: "Orbit", subtitle: "SaaS project management",
+    //     category: "SaaS", year: "2023",
+    //     tags: ["Next.js", "Supabase", "OpenAI", "Zustand"],
+    //     excerpt: "400 paying customers in 6 months. MRR reached $18K.",
+    //     description: "A collaborative project management SaaS built for small creative teams who found existing tools too heavy. Real-time multiplayer editing, AI task prioritisation, and a focus on reducing friction over adding features.",
+    //     challenge: "The market is saturated with PM tools. The only viable position was radical simplicity — a product that teams could onboard in 10 minutes and feel productive in the first session.",
+    //     process: "Ran a 6-week design sprint with 12 target users before building anything. Cut the feature set in half twice. Built the AI layer last, not first.",
+    //     outcome: "400 paying customers in 6 months without paid acquisition. NPS of 72. Acquired by a larger SaaS company 14 months after launch.",
+    //     metrics: [{v: "400+", l: "Customers"}, {v: "72", l: "NPS"}, {v: "$18K", l: "MRR"}],
+    //     bg: "#e8f0e8",
+    //     featured: false,
+    // },
+    // {
+    //     id: "06", slug: "forma-editorial",
+    //     title: "Forma", subtitle: "Editorial magazine platform",
+    //     category: "Editorial", year: "2023",
+    //     tags: ["Next.js", "Sanity", "Tailwind CSS", "GSAP"],
+    //     excerpt: "A digital publication reaching 120K monthly readers.",
+    //     description: "A digital architecture and design publication needing a platform as considered as its editorial content. Custom reading experience, article-level analytics, and a subscription model built around the community.",
+    //     challenge: "Most magazine platforms are built for volume, not craft. Forma needed something that respected both the editors' work and the readers' time.",
+    //     process: "Designed the reading experience first — typography, rhythm, image treatment, pull quotes. Then built the infrastructure around what the content needed.",
+    //     outcome: "120,000 monthly readers six months after relaunch. Newsletter open rate at 41%. Subscription revenue up 280%.",
+    //     metrics: [{v: "120K", l: "Monthly readers"}, {v: "41%", l: "Open rate"}, {v: "+280%", l: "Subscriptions"}],
+    //     bg: "#f5ede8",
+    //     featured: false,
+    // },
 ];
 
 /* ─── SERVICES ─── */
@@ -128,10 +304,10 @@ export const testimonials = [
 
 /* ─── STATS ─── */
 export const stats = [
-    { v: 5, sfx: "+", label: "Years" },
-    { v: 40, sfx: "+", label: "Projects" },
-    { v: 98, sfx: "%", label: "Satisfaction" },
-    { v: 12, sfx: "", label: "Awards" },
+    {v: 5, sfx: "+", label: "Years"},
+    {v: 40, sfx: "+", label: "Projects"},
+    {v: 98, sfx: "%", label: "Satisfaction"},
+    {v: 12, sfx: "", label: "Awards"},
 ];
 
 /* ─── SKILLS ─── */
@@ -143,11 +319,31 @@ export const skills = [
 
 /* ─── PROCESS STEPS ─── */
 export const processSteps = [
-    { n:"01", title:"Discover",  body:"Deep-dive into your goals, audience, constraints, and brand. I ask the questions no one else does — the ones that surface what the project really needs versus what's been asked for." },
-    { n:"02", title:"Architect", body:"Technical planning married to design thinking. Information hierarchy, component system, animation strategy, content model — everything mapped before code is touched." },
-    { n:"03", title:"Build",     body:"Iterative development in focused two-week cycles. You see real progress every week — no black-box development, no surprise reveals at the end." },
-    { n:"04", title:"Refine",    body:"Polish is where premium experiences are made. Every transition, every hover state, every detail is reconsidered until it either earns its place or gets cut." },
-    { n:"05", title:"Launch",    body:"Performance-optimised deployment with monitoring, analytics, and documentation thorough enough that your team can confidently own the work after handoff." },
+    {
+        n: "01",
+        title: "Discover",
+        body: "Deep-dive into your goals, audience, constraints, and brand. I ask the questions no one else does — the ones that surface what the project really needs versus what's been asked for."
+    },
+    {
+        n: "02",
+        title: "Architect",
+        body: "Technical planning married to design thinking. Information hierarchy, component system, animation strategy, content model — everything mapped before code is touched."
+    },
+    {
+        n: "03",
+        title: "Build",
+        body: "Iterative development in focused two-week cycles. You see real progress every week — no black-box development, no surprise reveals at the end."
+    },
+    {
+        n: "04",
+        title: "Refine",
+        body: "Polish is where premium experiences are made. Every transition, every hover state, every detail is reconsidered until it either earns its place or gets cut."
+    },
+    {
+        n: "05",
+        title: "Launch",
+        body: "Performance-optimised deployment with monitoring, analytics, and documentation thorough enough that your team can confidently own the work after handoff."
+    },
 ];
 
 /* ─── BLOG POSTS ─── */
