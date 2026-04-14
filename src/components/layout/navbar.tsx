@@ -21,8 +21,12 @@ export const Navbar = ({isHome}: { isHome?: boolean }) => {
     const pathname = usePathname();
 
     useEffect(() => {
-        const delay = isHome ? 3.0 : 0.3;
-        gsap.from(navRef.current, {y: -50, opacity: 0, duration: .9, ease: "power3.out", delay});
+        const delay = isHome ? 0.1 : 0.3;
+        gsap.fromTo(
+            navRef.current,
+            { y: -50, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.9, ease: "power3.out", delay }
+        );
         const onScroll = () => setStuck(window.scrollY > 50);
         window.addEventListener("scroll", onScroll, {passive: true});
         return () => window.removeEventListener("scroll", onScroll);
@@ -54,14 +58,14 @@ export const Navbar = ({isHome}: { isHome?: boolean }) => {
                 {/* Desktop links */}
                 <div style={{display: "flex", alignItems: "center", gap: "2.5rem"}} className="hide-mob">
                     {LINKS.map(l => (
-                        <a key={l.label} href={l.href}
+                        <Link key={l.label} href={l.href}
                            className={`nav-link ${pathname === l.href || pathname.startsWith(l.href + "/") ? "active" : ""}`}>
                             {l.label}
-                        </a>
+                        </Link>
                     ))}
-                    <a href="/contact" className="btn btn-dark" style={{padding: ".7rem 1.8rem", marginLeft: ".5rem"}}>
+                    <Link href="/contact" className="btn btn-dark" style={{padding: ".7rem 1.8rem", marginLeft: ".5rem"}}>
                         Hire Me
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Hamburger */}
