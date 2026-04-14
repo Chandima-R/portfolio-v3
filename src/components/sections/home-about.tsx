@@ -65,13 +65,13 @@ export const HomeAbout = ()=> {
 
                         <div className="ha-body" style={{ display: "flex", flexDirection: "column", gap: "1.4rem", marginBottom: "3rem" }}>
                             <p className="ha-fade t-body-lg">
-                                I'm Chandima — a freelance frontend developer from Colombo.
+                                I'm Chandima - a freelance frontend developer from Colombo.
                                 Five years of building products that sit at the intersection of
                                 engineering rigour and considered design.
                             </p>
                             <p className="ha-fade t-body">
                                 I obsess over the details that most people don't notice but everyone
-                                feels — the timing of an animation, the weight of a typeface, the
+                                feels - the timing of an animation, the weight of a typeface, the
                                 satisfaction of an interaction that just works.
                             </p>
                         </div>

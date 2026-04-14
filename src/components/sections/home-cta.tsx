@@ -59,13 +59,13 @@ export const HomeCTA = ()=> {
                     <a href="/contact" className="btn btn-dark" style={{ fontSize: ".65rem", padding: "1.2rem 3.5rem" }}>
                         Start a conversation →
                     </a>
-                    <a href="mailto:hello@chandimarathnayake.online" className="t-label" style={{
+                    <a href="mailto:chandimar.online@gmail.com" className="t-label" style={{
                         color: "var(--c-mid)", transition: "color .3s",
                     }}
                        onMouseEnter={e => (e.currentTarget.style.color = "var(--c-ink)")}
                        onMouseLeave={e => (e.currentTarget.style.color = "var(--c-mid)")}
                     >
-                        hello@chandimarathnayake.online
+                        chandimar.online@gmail.com
                     </a>
                 </div>
             </div>
