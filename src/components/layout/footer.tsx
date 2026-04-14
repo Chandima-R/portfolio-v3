@@ -2,6 +2,7 @@
 import {useEffect, useRef} from "react";
 import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,25 +40,43 @@ export const Footer = ()=> {
             </div>
 
             {/* Bottom bar */}
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "1.5rem", paddingTop: "2rem" }}>
-        <span className="t-label" style={{ color: "rgba(248,247,244,.25)" }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between",  gap: "1.5rem", paddingTop: "2rem" }}>
+                <div className={'w-full md:w-1/3 flex items-center justify-start'}>
+                    <span className="t-label" style={{ color: "rgba(248,247,244,.25)" }}>
           © {new Date().getFullYear()} Chandima Rathnayake
         </span>
-                <div style={{ display: "flex", gap: "2rem" }}>
-                    {["GitHub","LinkedIn","Dribbble"].map(s => (
-                        <a key={s} href="#" className="t-label" style={{ color: "rgba(248,247,244,.3)", transition: "color .3s" }}
-                           onMouseEnter={e => (e.currentTarget.style.color = "rgba(248,247,244,.7)")}
-                           onMouseLeave={e => (e.currentTarget.style.color = "rgba(248,247,244,.3)")}>
-                            {s}
-                        </a>
+                </div>
+                <div className={'w-full md:w-1/3 flex items-center justify-center'} style={{ display: "flex", gap: "2rem" }}>
+                    {[
+                        { label: "GitHub", href: "https://github.com/Chandima-R" },
+                        { label: "LinkedIn", href: "https://www.linkedin.com/in/chandimarathnayake15/" },
+                        { label: "Facebook", href: "https://www.facebook.com/chandima.rathnayake.179373" },
+                    ].map(({ label, href }) => (
+                        <Link
+                            key={label}
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="t-label"
+                            style={{
+                                color: "rgba(248,247,244,.3)",
+                                transition: "color .3s"
+                            }}
+                            onMouseEnter={e => (e.currentTarget.style.color = "rgba(248,247,244,.7)")}
+                            onMouseLeave={e => (e.currentTarget.style.color = "rgba(248,247,244,.3)")}
+                        >
+                            {label}
+                        </Link>
                     ))}
                 </div>
-                <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                        className="t-label" style={{ color: "rgba(248,247,244,.3)", transition: "color .3s" }}
-                        onMouseEnter={e => (e.currentTarget.style.color = "rgba(248,247,244,.7)")}
-                        onMouseLeave={e => (e.currentTarget.style.color = "rgba(248,247,244,.3)")}>
-                    ↑ Top
-                </button>
+                <div className={'w-full md:w-1/3 flex justify-end items-center'}>
+                    <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                            className="t-label" style={{ color: "rgba(248,247,244,.3)", transition: "color .3s" }}
+                            onMouseEnter={e => (e.currentTarget.style.color = "rgba(248,247,244,.7)")}
+                            onMouseLeave={e => (e.currentTarget.style.color = "rgba(248,247,244,.3)")}>
+                        ↑ Top
+                    </button>
+                </div>
             </div>
         </footer>
     );
