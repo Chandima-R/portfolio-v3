@@ -1,5 +1,6 @@
 import type {Metadata} from "next";
 import "./globals.css";
+import GoogleAnalytics from "@/components/utils/google-analytics";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://www.chandimarathnayake.online"),
@@ -133,6 +134,7 @@ export default function RootLayout({
         </head>
 
         <body>
+        <GoogleAnalytics />
         <div className="noise" aria-hidden />
         {children}
         </body>
