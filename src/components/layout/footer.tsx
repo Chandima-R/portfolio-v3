@@ -51,6 +51,7 @@ export const Footer = ()=> {
                         { label: "GitHub", href: "https://github.com/Chandima-R" },
                         { label: "LinkedIn", href: "https://www.linkedin.com/in/chandimarathnayake15/" },
                         { label: "Facebook", href: "https://www.facebook.com/chandima.rathnayake.179373" },
+                        { label: "WhatsApp", href: "https://wa.me/94716264936" },
                     ].map(({ label, href }) => (
                         <Link
                             key={label}

@@ -86,14 +86,50 @@ export default function ContactPage() {
                             </div>
 
                             {[
-                                { label:"Based in",      val:"Colombo, Sri Lanka" },
-                                { label:"Availability",  val:"Working with clients worldwide" },
+                                { label:"Phone", val:"+94 71 626 4936", type:"phone" },
+                                { label:"Based in", val:"Colombo, Sri Lanka" },
+                                { label:"Availability", val:"Working with clients worldwide" },
                                 { label:"Response time", val:"Within 24 hours" },
-                                { label:"Timezone",      val:"UTC+5:30 (IST)" },
+                                { label:"Timezone", val:"UTC+5:30 (IST)" },
                             ].map(d => (
-                                <div key={d.label} className="ct-detail" style={{ marginBottom:"2rem", paddingBottom:"2rem", borderBottom:"1px solid var(--c-rule)" }}>
-                                    <p className="t-label" style={{ marginBottom:".4rem" }}>{d.label}</p>
-                                    <p style={{ fontFamily:"var(--f-sans)", fontSize:".95rem", color:"var(--c-ink2)", fontWeight:300 }}>{d.val}</p>
+                                <div
+                                    key={d.label}
+                                    className="ct-detail"
+                                    style={{
+                                        marginBottom:"2rem",
+                                        paddingBottom:"2rem",
+                                        borderBottom:"1px solid var(--c-rule)"
+                                    }}
+                                >
+                                    <p className="t-label" style={{ marginBottom:".4rem" }}>
+                                        {d.label}
+                                    </p>
+
+                                    {d.label === "Phone" ? (
+                                        <a
+                                            href={`tel:${d.val.replace(/\s/g, "")}`}
+                                            style={{
+                                                fontFamily:"var(--f-sans)",
+                                                fontSize:".95rem",
+                                                color:"var(--c-ink2)",
+                                                fontWeight:300,
+                                                textDecoration:"none"
+                                            }}
+                                        >
+                                            {d.val}
+                                        </a>
+                                    ) : (
+                                        <p
+                                            style={{
+                                                fontFamily:"var(--f-sans)",
+                                                fontSize:".95rem",
+                                                color:"var(--c-ink2)",
+                                                fontWeight:300
+                                            }}
+                                        >
+                                            {d.val}
+                                        </p>
+                                    )}
                                 </div>
                             ))}
 
@@ -104,12 +140,20 @@ export default function ContactPage() {
                                         { label:"GitHub",   href:"https://github.com/Chandima-R" },
                                         { label:"LinkedIn", href:"https://www.linkedin.com/in/chandimarathnayake15/" },
                                         { label:"Facebook", href:"https://www.facebook.com/chandima.rathnayake.179373" },
+                                        { label:"WhatsApp", href:"https://wa.me/94716264936" },
                                     ].map(({ label, href }) => (
-                                        <Link key={label} href={href} target="_blank" rel="noopener noreferrer"
-                                              className="t-label" style={{ color:"var(--c-mid)", transition:"color .3s" }}
-                                              onMouseEnter={e => (e.currentTarget.style.color="var(--c-ink)")}
-                                              onMouseLeave={e => (e.currentTarget.style.color="var(--c-mid)")}
-                                        >{label} ↗</Link>
+                                        <Link
+                                            key={label}
+                                            href={href}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="t-label"
+                                            style={{ color:"var(--c-mid)", transition:"color .3s" }}
+                                            onMouseEnter={e => (e.currentTarget.style.color="var(--c-ink)")}
+                                            onMouseLeave={e => (e.currentTarget.style.color="var(--c-mid)")}
+                                        >
+                                            {label} ↗
+                                        </Link>
                                     ))}
                                 </div>
                             </div>
