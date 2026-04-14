@@ -230,11 +230,20 @@ export default function CaseStudy() {
           {/* image placeholder */}
           <div className="cs-img-wrap" style={{ marginBottom: "clamp(5rem,8vw,10rem)", overflow: "hidden", aspectRatio: "16/9", background: p.bg }}>
             <div className="cs-img-inner" style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
-              <div style={{
-                position: "absolute", inset: 0,
-                backgroundImage: `linear-gradient(rgba(15,15,13,.04) 1px,transparent 1px), linear-gradient(90deg,rgba(15,15,13,.04) 1px,transparent 1px)`,
-                backgroundSize: "48px 48px",
-              }} />
+              <div
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    backgroundImage: `
+      url('${p.banner}'),
+      linear-gradient(rgba(15,15,13,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15,15,13,.04) 1px, transparent 1px)
+    `,
+                    backgroundSize: "cover, 48px 48px, 48px 48px",
+                    backgroundPosition: "center, 0 0, 0 0",
+                    backgroundRepeat: "no-repeat, repeat, repeat",
+                  }}
+              />
               <span style={{ fontFamily: "var(--f-serif)", fontSize: "clamp(3rem,10vw,10rem)", fontWeight: 300, fontStyle: "italic", color: "rgba(15,15,13,.08)", zIndex: 1 }}>
                 {p.title}
               </span>

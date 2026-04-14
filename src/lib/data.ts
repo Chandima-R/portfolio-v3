@@ -34,7 +34,9 @@ export const projects = [
         link: "https://gds-portfolio-redesign.vercel.app/",
 
         bg: "rgb(12 48 80 / 0.25)",
-        featured: true
+        featured: true,
+
+        banner: '/images/projects/gds-portfolio.png'
     },
 
     {
@@ -71,7 +73,10 @@ export const projects = [
         link: "https://laura-moon-photograpy-rebrand.vercel.app/",
 
         bg: "#f7f3ee",
-        featured: true
+        featured: true,
+
+        banner: '/images/projects/laura-moon-photography.png'
+
     },
 
     {
@@ -108,7 +113,10 @@ export const projects = [
         link: "https://pristine-carpet-services-rebrand.vercel.app/",
 
         bg: "rgb(0 186 243 / 0.38)",
-        featured: true
+        featured: true,
+
+        banner: '/images/projects/pristine-carpets.png'
+
     },
     {
         id: "04",
@@ -145,7 +153,9 @@ export const projects = [
         link: "https://villa-lee.vercel.app/",
 
         bg: "rgb(154 67 14 / 0.49)",
-        featured: true
+        featured: true,
+
+        banner: '/images/projects/villa-lee.png'
     },
     {
         id: "05",
@@ -182,7 +192,10 @@ export const projects = [
         link: "https://villa-76-pi.vercel.app/",
 
         bg: "rgb(4 9 15 / 0.5)",
-        featured: true
+        featured: true,
+
+        banner: '/images/projects/villa-76.png'
+
     }
     // {
     //     id: "02", slug: "luxe-commerce",

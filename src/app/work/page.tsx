@@ -4,6 +4,7 @@ import {gsap} from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {PageLayout} from "@/components/layout/page-layout";
 import {projects} from "@/lib/data";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,7 +55,7 @@ export default function WorkPage() {
 
             {/* projects grid */}
             <div ref={gridRef} className="wrap" style={{ paddingTop: "clamp(4rem,7vw,9rem)", paddingBottom: "clamp(6rem,10vw,12rem)" }}>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%,480px),1fr))", gap: "2px" }}>
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%,480px),1fr))", gap: "20px" }}>
                     {filtered.map((p, i) => <WorkCard key={p.id} p={p} i={i} />)}
                 </div>
             </div>
@@ -81,15 +82,35 @@ function WorkCard({ p, i }: { p: typeof projects[0]; i: number }) {
     return (
         <a ref={ref} href={`/work/${p.slug}`} className="work-card"
            onMouseEnter={() => setHov(true)} onMouseMove={onMove} onMouseLeave={onLeave}
-           style={{ display: "block", background: p.bg, aspectRatio: i % 3 === 0 ? "4/3" : "1/1", position: "relative", overflow: "hidden" }}
+           style={{ display: "block", background: p.bg, aspectRatio: i % 3 === 0 ? "4/3" : "16/9", position: "relative", overflow: "hidden" }}
            data-cursor-img
         >
             {/* subtle grid */}
-            <div style={{
-                position: "absolute", inset: 0,
-                backgroundImage: `linear-gradient(rgba(15,15,13,.05) 1px,transparent 1px), linear-gradient(90deg,rgba(15,15,13,.05) 1px,transparent 1px)`,
-                backgroundSize: "48px 48px", opacity: hov ? 1 : 0, transition: "opacity .5s",
-            }} />
+            <div style={{ position: "absolute", inset: 0, transition: "opacity .5s" }}>
+                {/* Image */}
+                <div
+                    style={{
+                        position: "absolute",
+                        inset: 0,
+                        backgroundImage: `url('${p.banner}')`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                    }}
+                />
+
+                {/* Grid */}
+                <div
+                    style={{
+                        position: "absolute",
+                        inset: 0,
+                        backgroundImage: `
+        linear-gradient(rgba(15,15,13,.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15,15,13,.05) 1px, transparent 1px)
+      `,
+                        backgroundSize: "48px 48px",
+                    }}
+                />
+            </div>
 
             {/* number watermark */}
             <div style={{
@@ -119,9 +140,15 @@ function WorkCard({ p, i }: { p: typeof projects[0]; i: number }) {
                     fontWeight: 300, fontStyle: "italic", color: "var(--c-bg)",
                     letterSpacing: "-.02em", marginBottom: ".5rem",
                 }}>{p.title}</h3>
-                <p style={{ fontFamily: "var(--f-mono)", fontSize: ".58rem", letterSpacing: ".16em", textTransform: "uppercase", color: "rgba(248,247,244,.45)" }}>
-                    View case study → 
-                </p>
+                <div className={'flex gap-4 items-center'}>
+                    <p style={{ fontFamily: "var(--f-mono)", fontSize: ".58rem", letterSpacing: ".16em", textTransform: "uppercase", color: "rgba(248,247,244,.45)" }}>
+                        View case study →
+                    </p>
+
+                    <Link href={p.link} style={{ fontFamily: "var(--f-mono)", fontSize: ".58rem", letterSpacing: ".16em", textTransform: "uppercase", color: "rgba(248,247,244,.9)" }} target="_blank" rel="noreferrer" className={'hover:underline'}>
+                        Visit Site →
+                    </Link>
+                </div>
             </div>
         </a>
     );
