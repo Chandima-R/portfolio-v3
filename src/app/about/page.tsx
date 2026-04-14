@@ -71,9 +71,9 @@ export default function AboutPage() {
                         <div>
                             <p className="t-label ab-fade" style={{ marginBottom: "2rem" }}>Chandima Rathnayake — Colombo, Sri Lanka</p>
                             {[
-                                "I'm a freelance frontend developer with five years of building products people actually want to use. My work spans e-commerce, fintech, SaaS, and agency sites — unified by an obsession with craft that most clients don't expect from an engineer.",
+                                "I'm a freelance frontend developer with five years of building products people actually want to use. My work spans e-commerce, fintech, SaaS, and agency sites - unified by an obsession with craft that most clients don't expect from an engineer.",
                                 "Before I write a line of code, I spend time understanding why the project exists, who it's for, and what success actually looks like. Most development problems are design problems in disguise, and most design problems are communication problems in disguise.",
-                                "I work with a small number of clients at a time — by choice. Every project gets my full attention, not the fractured focus of someone juggling twelve things. If we're a fit, you'll have access to a developer who treats your work as seriously as you do.",
+                                "I work with a small number of clients at a time - by choice. Every project gets my full attention, not the fractured focus of someone juggling twelve things. If we're a fit, you'll have access to a developer who treats your work as seriously as you do.",
                                 "When I'm not building, I'm writing about frontend development, contributing to open source, and following the intersection of design and engineering more closely than is probably healthy."
                             ].map((para, i) => (
                                 <p key={i} className="ab-fade t-body-lg" style={{ marginBottom: "1.4rem" }}>{para}</p>
@@ -131,7 +131,7 @@ export default function AboutPage() {
                             <div className="line-clip"><div className="reveal-line t-h2">How I work.</div></div>
                         </div>
                         <p className="t-body-lg ab-fade" style={{ maxWidth: 380 }}>
-                            Every engagement follows a clear, collaborative process — designed to surface the right answers before any code is written.
+                            Every engagement follows a clear, collaborative process - designed to surface the right answers before any code is written.
                         </p>
                     </div>
 

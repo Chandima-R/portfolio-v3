@@ -330,17 +330,17 @@ export const processSteps = [
     {
         n: "01",
         title: "Discover",
-        body: "Deep-dive into your goals, audience, constraints, and brand. I ask the questions no one else does — the ones that surface what the project really needs versus what's been asked for."
+        body: "Deep-dive into your goals, audience, constraints, and brand. I ask the questions no one else does - the ones that surface what the project really needs versus what's been asked for."
     },
     {
         n: "02",
         title: "Architect",
-        body: "Technical planning married to design thinking. Information hierarchy, component system, animation strategy, content model — everything mapped before code is touched."
+        body: "Technical planning married to design thinking. Information hierarchy, component system, animation strategy, content model - everything mapped before code is touched."
     },
     {
         n: "03",
         title: "Build",
-        body: "Iterative development in focused two-week cycles. You see real progress every week — no black-box development, no surprise reveals at the end."
+        body: "Iterative development in focused two-week cycles. You see real progress every week - no black-box development, no surprise reveals at the end."
     },
     {
         n: "04",
