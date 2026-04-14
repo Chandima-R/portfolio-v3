@@ -315,7 +315,7 @@ export const stats = [
     {v: 5, sfx: "+", label: "Years"},
     {v: 40, sfx: "+", label: "Projects"},
     {v: 98, sfx: "%", label: "Satisfaction"},
-    {v: 12, sfx: "", label: "Awards"},
+    { v: 25, sfx: "+", label: "Clients" }
 ];
 
 /* ─── SKILLS ─── */
