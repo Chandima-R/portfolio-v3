@@ -275,7 +275,7 @@ export const services = [
     },
     {
         n: "04", title: "Performance Engineering",
-        body: "Rebuilding slow websites for speed. Core Web Vitals audits, bundle analysis, caching strategies, and edge deployment — without breaking what already works.",
+        body: "Rebuilding slow websites for speed. Core Web Vitals audits, bundle analysis, caching strategies, and edge deployment - without breaking what already works.",
         tags: ["Lighthouse", "Core Web Vitals", "Vercel", "Edge"],
     },
     {

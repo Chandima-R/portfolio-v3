@@ -45,7 +45,7 @@ export const HomeServices = () => {
                     <div>
                         <p className="t-body-lg" style={{ maxWidth: 380 }}>
                             End-to-end frontend and full-stack development. From architectural planning
-                            to pixel-perfect implementation — every engagement is a genuine partnership.
+                            to pixel-perfect implementation - every engagement is a genuine partnership.
                         </p>
                         <a href="/services" className="btn-text t-label" style={{ display: "inline-block", marginTop: "2rem" }}>
                             See pricing →

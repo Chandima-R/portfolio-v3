@@ -34,7 +34,7 @@ export default function ServicesPage() {
 
     return (
         <PageLayout label="Services" title="What I build."
-                    subtitle="End-to-end frontend and full-stack development. Every engagement is a genuine partnership — your success is my portfolio.">
+                    subtitle="End-to-end frontend and full-stack development. Every engagement is a genuine partnership - your success is my portfolio.">
             <div ref={ref}>
 
                 {/* ── SERVICES LIST ── */}
