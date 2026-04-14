@@ -76,7 +76,7 @@ export const HomeAbout = ()=> {
                             </p>
                         </div>
 
-                        <a href="/about" className="btn btn-outline ha-fade">Learn more →</a>
+                        <a href="/about" className="btn btn-outline">Learn more →</a>
 
                         {/* stats */}
                         <div className="ha-stats" style={{
@@ -103,17 +103,26 @@ export const HomeAbout = ()=> {
                     <div>
                         <div className="ha-img-wrap" style={{ aspectRatio: "3/4", overflow: "hidden", background: "#e8e4db" }}>
                             <div className="ha-img-inner" style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
-                                <div style={{
-                                    position: "absolute", inset: 0,
-                                    backgroundImage: `linear-gradient(rgba(15,15,13,.04) 1px, transparent 1px),
-                                    linear-gradient(90deg, rgba(15,15,13,.04) 1px, transparent 1px)`,
-                                    backgroundSize: "32px 32px",
-                                }} />
-                                <span style={{
-                                    fontFamily: "var(--f-serif)", fontSize: "clamp(5rem,12vw,11rem)",
-                                    fontWeight: 300, fontStyle: "italic",
-                                    color: "rgba(15,15,13,.08)", userSelect: "none", zIndex: 1,
-                                }}>CR</span>
+                                <div
+                                    style={{
+                                        position: "absolute",
+                                        inset: 0,
+                                        backgroundImage: `
+      linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+      url("/images/about/me.jpg")
+    `,
+                                        backgroundSize: "cover",
+                                        backgroundPosition: "center",
+                                        backgroundRepeat: "no-repeat",
+                                    }}
+                                />
+                                {/*<span*/}
+                                {/*    className={'shadow-xs'}*/}
+                                {/*    style={{*/}
+                                {/*    fontFamily: "var(--f-serif)", fontSize: "clamp(5rem,12vw,11rem)",*/}
+                                {/*    fontWeight: 300, fontStyle: "italic",*/}
+                                {/*    color: "rgba(15,15,13,.08)", userSelect: "none", zIndex: 1,*/}
+                                {/*}}>CR</span>*/}
                             </div>
                         </div>
                     </div>
