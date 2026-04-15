@@ -105,15 +105,23 @@ function ProjectEntry({ p, reverse }: { p: typeof projects[0]; reverse: boolean 
         >
             {/* image — order changes on reverse */}
             <div style={{ order: reverse ? 1 : 0 }}>
-                <div className="img-reveal-wrap" style={{ aspectRatio: "4/3", background: p.bg, overflow: "hidden" }}>
+                <div className="img-reveal-wrap" style={{ aspectRatio: "16/9", background: p.bg, overflow: "hidden" }}>
                     <div className="img-reveal-inner" style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
                         {/* placeholder visual */}
-                        <div style={{
-                            position: "absolute", inset: 0,
-                            backgroundImage: `linear-gradient(135deg, rgba(0,0,0,.04) 25%, transparent 25%,
-                transparent 50%, rgba(0,0,0,.04) 50%, rgba(0,0,0,.04) 75%, transparent 75%)`,
-                            backgroundSize: "40px 40px",
-                        }} />
+                        <div
+                            style={{
+                                position: "absolute",
+                                inset: 0,
+                                backgroundImage: `
+      linear-gradient(135deg, rgba(0,0,0,.04) 25%, transparent 25%, 
+      transparent 50%, rgba(0,0,0,.04) 50%, rgba(0,0,0,.04) 75%, transparent 75%),
+      url(${p.banner})
+    `,
+                                backgroundSize: "40px 40px, cover",
+                                backgroundPosition: "0 0, center",
+                                backgroundRepeat: "repeat, no-repeat",
+                            }}
+                        />
                         <span style={{
                             fontFamily: "var(--f-serif)", fontSize: "clamp(3rem,8vw,8rem)", fontWeight: 300,
                             fontStyle: "italic", color: "rgba(15,15,13,.1)", userSelect: "none", zIndex: 1,
