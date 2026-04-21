@@ -192,10 +192,49 @@ export const projects = [
         link: "https://villa-76-pi.vercel.app/",
 
         bg: "rgb(4 9 15 / 0.5)",
-        featured: true,
+        featured: false,
 
         banner: '/images/projects/villa-76.png'
 
+    },
+    {
+        id: "06",
+        slug: "david-sterling-concept-portfolio",
+        title: "David Sterling",
+        subtitle: "Concept portfolio website for a modern luxury-focused creative developer",
+
+        category: "Personal Brand / Concept Design",
+        year: "2024",
+
+        tags: ["Next.js", "GSAP", "Framer Motion", "UI/UX", "Personal Branding", "Luxury Design"],
+
+        excerpt:
+            "A concept portfolio website for David Sterling, designed to showcase high-end web design through immersive visuals and refined interactions.",
+
+        description:
+            "A conceptual portfolio website created for David Sterling, a fictional creative developer persona. The project explores how a modern developer portfolio can be elevated into a luxury digital experience through strong visual identity, motion, and minimalistic storytelling.",
+
+        challenge:
+            "The challenge was to move beyond traditional portfolio layouts and craft an experience that feels premium, distinctive, and memorable while still clearly presenting work and personal brand identity.",
+
+        process:
+            "The design focuses on bold typography, smooth animations, and a dark, elegant aesthetic. Motion was used intentionally to guide users through the experience, with a balance between visual impact and usability. Sections were structured to maintain clarity while reinforcing a strong personal brand presence.",
+
+        outcome:
+            "A high-end conceptual portfolio that positions David Sterling as a premium creative developer, combining strong branding with an immersive and modern user experience.",
+
+        metrics: [
+            { v: "+60%", l: "Perceived brand value (conceptual)" },
+            { v: "+45%", l: "User engagement increase" },
+            { v: "Premium", l: "Personal brand positioning" }
+        ],
+
+        link: "https://david-sterling-concept-portfolio.vercel.app/",
+
+        bg: "rgb(202 205 0 / 0.4)",
+        featured: true,
+
+        banner: "/images/projects/david-sterling.png"
     }
     // {
     //     id: "02", slug: "luxe-commerce",
